@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shabana 🎂❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+    background:linear-gradient(-45deg,#ff758c,#ff7eb3,#8e2de2,#4facfe);
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+    color:white;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.page{
+    min-height:100vh;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+    position:relative;
+    overflow:hidden;
+}
+
+.page.active{
+    display:flex;
+}
+
+h1{
+    font-size:clamp(35px,8vw,70px);
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(255,255,255,.8);
+}
+
+h2{
+    font-size:clamp(25px,6vw,45px);
+    margin-bottom:20px;
+}
+
+p{
+    font-size:20px;
+    max-width:700px;
+    line-height:1.6;
+    margin:10px auto;
+}
+
+button{
+    border:none;
+    padding:15px 28px;
+    margin:10px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    background:white;
+    color:#e91e63;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.25s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.next{
+    margin-top:25px;
+}
+
+.heart{
+    position:fixed;
+    font-size:25px;
+    animation:float 6s linear infinite;
+    opacity:.8;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(110vh) rotate(0deg);
+        opacity:0;
+    }
+    20%{opacity:1}
+    100%{
+        transform:translateY(-10vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.sparkle{
+    position:fixed;
+    pointer-events:none;
+    animation:spark 1.5s ease-out forwards;
+}
+
+@keyframes spark{
+    0%{
+        transform:scale(0);
+        opacity:1;
+    }
+    100%{
+        transform:scale(3);
+        opacity:0;
+    }
+}
+
+.confetti{
+    position:fixed;
+    width:9px;
+    height:15px;
+    top:-20px;
+    animation:fall 4s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+    }
+}
+
+.firework{
+    position:fixed;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    pointer-events:none;
+}
+
+.gift-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.gift{
+    width:120px;
+    height:120px;
+    background:#e91e63;
+    border-radius:15px;
+    position:relative;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.gift:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.gift::before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:100%;
+    background:#ffd54f;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.gift::after{
+    content:"";
+    position:absolute;
+    height:20px;
+    width:100%;
+    background:#ffd54f;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.gift span{
+    position:absolute;
+    z-index:2;
+    font-size:55px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.photo{
+    width:min(330px,85vw);
+    max-height:430px;
+    object-fit:cover;
+    border-radius:25px;
+    border:6px solid white;
+    box-shadow:0 0 40px rgba(255,255,255,.7);
+    margin:15px 0;
+}
+
+.troll-box{
+    background:rgba(0,0,0,.2);
+    padding:25px;
+    border-radius:25px;
+    backdrop-filter:blur(8px);
+    max-width:700px;
+}
+
+.cake{
+    font-size:130px;
+    animation:cake 1s infinite alternate;
+}
+
+@keyframes cake{
+    from{transform:scale(1)}
+    to{transform:scale(1.1)}
+}
+
+.party-buttons{
+    position:relative;
+    width:100%;
+    height:180px;
+}
+
+#noBtn{
+    position:absolute;
+}
+
+.final{
+    background:rgba(0,0,0,.15);
+}
+
+.krishna{
+    font-size:60px;
+    margin:10px;
+}
+
+.monkey{
+    width:min(300px,80vw);
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:0 0 30px rgba(255,255,255,.7);
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+    <div class="krishna">🦚</div>
+    <h1>🎂 Happy Birthday Shabana! ❤️🥳</h1>
+
+    <p>
+        Aaj ka din special hai kyunki aaj hamari Shabana ka birthday hai! 😎❤️
+    </p>
+
+    <p>
+        Bhagwan tumhe hamesha khush rakhe,
+        tumhari saari wishes complete ho
+        aur tumhari life mein happiness hi happiness rahe! ✨
+    </p>
+
+    <button class="next" onclick="nextPage(2)">
+        Aage Dekh 😏➡️
+    </button>
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+    <h2>🤫 RUKO RUKO...</h2>
+
+    <p>
+        Itni jaldi birthday wish karke main khatam thodi karunga! 😂
+    </p>
+
+    <p>
+        Asli surprise abhi baaki hai... 👀
+    </p>
+
+    <button onclick="nextPage(3)">
+        Continue 😈
+    </button>
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+    <h2>😂 SHABANA KO PARESHAN KARNA START!</h2>
+
+    <div class="troll-box">
+        <p id="trollText">
+            Birthday hai toh iska matlab ye nahi ki tum bach jaogi! 🤣
+        </p>
+    </div>
+
+    <button onclick="changeTroll()">
+        Aur Sun 😈
+    </button>
+
+    <button onclick="nextPage(4)">
+        Bas Bas 😂
+    </button>
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+    <h2>OYEEE SHABANA! 😂</h2>
+
+    <p>
+        Birthday girl ban ke zyada attitude mat dikha! 😤🤣
+    </p>
+
+    <p>
+        Aaj tumhara special day hai,
+        isliye thoda extra pyaar aur thoda extra trolling allowed hai. ❤️😂
+    </p>
+
+    <button onclick="nextPage(5)">
+        Surprise Gifts 🎁
+    </button>
+</section>
+
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+    <h2>🎁 CHOOSE YOUR GIFT 🎁</h2>
+
+    <p>
+        Sirf ek gift mein asli surprise hai... 👀
+    </p>
+
+    <div class="gift-container">
+
+        <div class="gift" onclick="openGift(1)">
+            <span>🎁</span>
+        </div>
+
+        <div class="gift" onclick="openGift(2)">
+            <span>🎁</span>
+        </div>
+
+        <div class="gift" onclick="openGift(3)">
+            <span>🎁</span>
+        </div>
+
+    </div>
+
+    <p id="giftMessage"></p>
+</section>
+
+
+<!-- PAGE 6 -->
+<section class="page" id="page6">
+    <h2>🎉 SURPRISEEEEE! 🎉</h2>
+
+    <img src="shabana.jpg" class="photo" alt="Shabana">
+
+    <p>
+        😂 Birthday girl spotted!
+    </p>
+
+    <p>
+        Happy Birthday Shabana! ❤️🎂
+    </p>
+
+    <button onclick="nextPage(7)">
+        Ek Aur Surprise 👀
+    </button>
+</section>
+
+
+<!-- PAGE 7 -->
+<section class="page" id="page7">
+    <h2>🤫 EK AUR SURPRISE HAI TERE LIYE...</h2>
+
+    <p>
+        Lekin uske liye ek baar aur click karna padega! 😂
+    </p>
+
+    <button onclick="nextPage(8)">
+        Surprise Khol 😈
+    </button>
+</section>
+
+
+<!-- PAGE 8 -->
+<section class="page" id="page8">
+    <div class="cake">🎂</div>
+
+    <h2>LE CHOTI! 😂🎂</h2>
+
+    <p>
+        Tere liye special birthday cake! ❤️
+    </p>
+
+    <p>
+        Ab smile kar aur cake enjoy kar! 😎
+    </p>
+
+    <button onclick="nextPage(9)">
+        Cake Kha Liya 😋
+    </button>
+</section>
+
+
+<!-- PAGE 9 -->
+<section class="page" id="page9">
+    <h2>🍕 AB PARTY DEGI YA NAHI? 😂</h2>
+
+    <p>
+        Ab maine itna sab diya...
+        tu bhi party degi ya nahi? 😏
+    </p>
+
+    <div class="party-buttons">
+
+        <button onclick="partyYes()">
+            YES 😎❤️
+        </button>
+
+        <button id="noBtn" onclick="partyNo()">
+            NO 😭
+        </button>
+
+    </div>
+
+    <p id="noMessage"></p>
+</section>
+
+
+<!-- PAGE 10 -->
+<section class="page" id="page10">
+    <h1>🤣 KHIKHIKHIKHI 🤣</h1>
+
+    <h2>
+        Mujhe pata tha tu YES karegi! 😎❤️
+    </h2>
+
+    <p>
+        Party kab de rahi hai madam? 🍕🍔🎂😂
+    </p>
+
+    <button onclick="nextPage(11)">
+        Final Surprise ✨
+    </button>
+</section>
+
+
+<!-- PAGE 11 -->
+<section class="page final" id="page11">
+
+    <div class="krishna">🦚🙏</div>
+
+    <h1>HAPPY BIRTHDAY SHABANA ❤️</h1>
+
+    <p>
+        🎂 15 SEPTEMBER 🎂
+    </p>
+
+    <p>
+        Tumhari life hamesha happiness,
+        success, good health aur beautiful moments se bhari rahe! ✨❤️
+    </p>
+
+    <p>
+        🦚 Jai Shree Krishna 🦚
+    </p>
+
+    <p>
+        Janmashtami ki bhi bahut saari shubhkamnayein! 🙏💙
+    </p>
+
+    <button onclick="nextPage(12)">
+        Last Wala 😂
+    </button>
+</section>
+
+
+<!-- PAGE 12 -->
+<section class="page" id="page12">
+
+    <h2>😂 BAS EK LAST CHEEZ...</h2>
+
+    <p>
+        Shabana ke liye special comparison nahi... 😌
+    </p>
+
+    <p>
+        Bas ek random bandar mil gaya 😂🐒
+    </p>
+
+    <img src="monkey.jpg"
+         class="monkey"
+         alt="Funny monkey">
+
+    <p>
+        😂 Yeh dekho, kya scene hai!
+    </p>
+
+    <h2>
+        HAPPY BIRTHDAY ONCE AGAIN SHABANA ❤️🎂
+    </h2>
+
+    <p>
+        Ab party dena mat bhoolna! 🍕🤣
+    </p>
+
+</section>
+
+
+<script>
+
+let currentPage = 1;
+
+function nextPage(number){
+
+    document.getElementById("page" + currentPage)
+        .classList.remove("active");
+
+    document.getElementById("page" + number)
+        .classList.add("active");
+
+    currentPage = number;
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+    confetti();
+
+    if(number === 6 || number === 10 ||
+       number === 11 || number === 12){
+        startFireworks();
+    }
+}
+
+
+/* TROLL MESSAGES */
+
+const trollMessages = [
+    "Birthday hai toh iska matlab ye nahi ki tum bach jaogi! 🤣",
+    "Aaj toh full VIP treatment milega... thodi trolling ke saath 😂",
+    "Madam ka birthday aa gaya, ab attitude bhi premium ho gaya kya? 😭🤣",
+    "Cake ke liye ready rehna, calories ka hisaab baad mein 😂🎂",
+    "Aaj tumhari birthday party hai, lekin bill ka kya? 👀🍕",
+    "Shabana ji, aaj aapka special day hai! 😎❤️"
+];
+
+let trollIndex = 0;
+
+function changeTroll(){
+
+    trollIndex++;
+
+    if(trollIndex >= trollMessages.length){
+        trollIndex = 0;
+    }
+
+    document.getElementById("trollText").innerText =
+        trollMessages[trollIndex];
+
+    sparkle();
+}
+
+
+/* GIFTS */
+
+const wrongGiftMessages = [
+    "Chiiii yrrr 😂 itna easy tha phir bhi galat!",
+    "Arey yaar 😭 doosra try maar!",
+    "Gift ne tumhe reject kar diya 🤣",
+    "Nahi nahi... ye wala nahi hai madam 😂",
+    "Dobara try kar! 👀🎁"
+];
+
+function openGift(number){
+
+    const message = document.getElementById("giftMessage");
+
+    if(number === 3){
+
+        message.innerText =
+            "BADIYA BETE! 😎❤️ SHI GIFT CHOOSE KIYA!";
+
+        confetti();
+        startFireworks();
+
+        setTimeout(function(){
+            nextPage(6);
+        },1200);
+
+    }else{
+
+        const random =
+            wrongGiftMessages[
+                Math.floor(Math.random()*wrongGiftMessages.length)
+            ];
+
+        message.innerText = random;
+
+        sparkle();
+    }
+}
+
+
+/* PARTY NO BUTTON */
+
+const noMessages = [
+    "Areeee 😂 mere se chalaki?",
+    "Bhai hoon tera, bhool gayi kya? 🤣",
+    "NO allowed nahi hai madam 😤",
+    "Itni aasani se nahi bachogi 😂",
+    "Dobara NO? 😭",
+    "YES kar de chupchaap 🤣",
+    "Party toh deni padegi 😈🍕",
+    "NO button bhi tere se darr raha hai 😂"
+];
+
+let noIndex = 0;
+
+function partyNo(){
+
+    const btn = document.getElementById("noBtn");
+
+    const x = Math.random()*220 - 110;
+    const y = Math.random()*120 - 60;
+
+    btn.style.transform =
+        `translate(${x}px,${y}px)`;
+
+    document.getElementById("noMessage").innerText =
+        noMessages[noIndex];
+
+    noIndex++;
+
+    if(noIndex >= noMessages.length){
+        noIndex = 0;
+    }
+
+    sparkle();
+}
+
+
+function partyYes(){
+
+    nextPage(10);
+    confetti();
+    startFireworks();
+
+}
+
+
+/* CONFETTI */
+
+function confetti(){
+
+    for(let i=0;i<80;i++){
+
+        const c = document.createElement("div");
+
+        c.className = "confetti";
+
+        c.style.left =
+            Math.random()*100 + "vw";
+
+        c.style.animationDuration =
+            (2 + Math.random()*3) + "s";
+
+        c.style.transform =
+            `rotate(${Math.random()*360}deg)`;
+
+        document.body.appendChild(c);
+
+        setTimeout(()=>{
+            c.remove();
+        },5000);
+    }
+}
+
+
+/* HEARTS */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerText =
+        ["❤️","💖","💕","💗","💓","💞"]
+        [Math.floor(Math.random()*6)];
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+    heart.style.animationDuration =
+        (4 + Math.random()*4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },8000);
+}
+
+setInterval(createHeart,700);
+
+
+/* SPARKLE */
+
+function sparkle(){
+
+    const s = document.createElement("div");
+
+    s.className = "sparkle";
+
+    s.innerText = "✨";
+
+    s.style.left =
+        Math.random()*90 + "vw";
+
+    s.style.top =
+        Math.random()*80 + "vh";
+
+    s.style.fontSize =
+        (20 + Math.random()*30) + "px";
+
+    document.body.appendChild(s);
+
+    setTimeout(()=>{
+        s.remove();
+    },1500);
+}
+
+
+/* FIREWORKS */
+
+function startFireworks(){
+
+    for(let i=0;i<5;i++){
+
+        setTimeout(()=>{
+            createFirework();
+        },i*500);
+
+    }
+}
+
+function createFirework(){
+
+    const x =
+        Math.random()*window.innerWidth;
+
+    const y =
+        100 + Math.random()*
+        (window.innerHeight*0.45);
+
+    for(let i=0;i<35;i++){
+
+        const particle =
+            document.createElement("div");
+
+        particle.className = "firework";
+
+        particle.style.left = x + "px";
+        particle.style.top = y + "px";
+
+        particle.style.background =
+            "hsl(" +
+            Math.random()*360 +
+            ",100%,70%)";
+
+        document.body.appendChild(particle);
+
+        const angle =
+            Math.PI*2*i/35;
+
+        const distance =
+            50 + Math.random()*130;
+
+        const dx =
+            Math.cos(angle)*distance;
+
+        const dy =
+            Math.sin(angle)*distance;
+
+        particle.animate(
+            [
+                {
+                    transform:"translate(0,0)",
+                    opacity:1
+                },
+                {
+                    transform:
+                        `translate(${dx}px,${dy}px)`,
+                    opacity:0
+                }
+            ],
+            {
+                duration:1200,
+                easing:"ease-out"
+            }
+        );
+
+        setTimeout(()=>{
+            particle.remove();
+        },1200);
+    }
+}
+
+
+/* START EFFECTS */
+
+for(let i=0;i<10;i++){
+    setTimeout(createHeart,i*300);
+}
+
+</script>
+
+</body>
+</html>
